@@ -1,65 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mt Viagens</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
+    <title>Sky-Trip</title>
+    <meta name="keywords" content ="Viagem,Hospedagem,Hotel,Passagens áreas">
+    <meta name="author" content ="">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
-        <div id="div_principal">
-            <div class="planeta_e_cadastro">
-                <span class="material-symbols-outlined" id="planeta">public_off</span>
-                <p id="logo_header">
-                    SKY-TRIP
-                </p>
-            </div>
-            <div class="planeta_e_cadastro">
-                <span class="material-symbols-outlined" id="login_person">account_circle</span>
-                <p id="cadastro_header">
-                    <a href="#">Entre ou cadastra-se</a>
+        <div id="nav-bar">
+            <a><img src="./assets/imgs/logo.png" alt="Logo Sky-Trip"></a>
+            <form action="index.html">
+                <input type="text" class="search-text" placeholder="Para onde você deseja ir?">
+            </form>
+            <div id="opt">
+                <img id="fav" src="./assets/imgs/favoritos.png" alt="Ir para favoritos">
+                <img id="login" src="./assets/imgs/user.png" alt="Ir pra login">
+                <p>
+                    <a href="">Entre ou <br>cadastre-se</a>
                 </p>
             </div>
         </div>
-        <div class="caixa_de_pesquisa">
-            <input type="text" class="search-text" placeholder="Para onde você deseja ir?">
-        </div>  
     </header>
     <main>
-        <section id="novos_destinos">
-        </section>
-        <section id="buscando_aeroporto">
-            <div id="escolher_pacote">
-                <h2>Escolha seu pacote</h2>
-                <p>Saindo de:  <input type="text" class="search-airport" id="saida_do_aeroporto" placeholder="Busque por aeroporto"></p>
-                <p>Destino para:  <input type="text" class="search-airport" placeholder="Busque por aeroporto"></p>
+        <section class="container">
+            <div class="carrossel">
+                <h1>Descubra novos destinos!</h1>
+                <div class="destinos">
+                    <div class="local" id="img">
+                        <a href=""><img src="./assets/imgs/destino1.png" alt=""></a>
+                        <a href=""><img src="./assets/imgs/destino2.png" alt=""></a>
+                        <a href=""><img src="./assets/imgs/destino3.png" alt=""></a>
+                    </div>
+                </div>
             </div>
-            <div id="tempo_de_viagem">
-                <h3>Escolha o tempo de viagem:</h3>
-                <div id="inicio_e_fim">
-                    <p>
-                        Inicio: <br>
-                        <input type="date" name="Inicio" id="data_de_inicio">
+            <div class="imgs">
+               <div id="firstimgs">
+                    <p class="produto">
+                        <img src="./assets/imgs/pacotes.png" alt="Logo de pacotes">
+                        Pacotes completos
                     </p>
-                    <p>
-                        Fim: <br>
-                        <input type="date" name="Fim" id="data_de_fim">
+                    <p class="produto">
+                        <img src="./assets/imgs/passagens.png" alt="Logo de passagens">
+                        Passagens aéreas
                     </p>
-                </div>
-                <div id="passageiros">
-                    <p>
-                        Passageiros: <input type="number" name="" id="num_de_passageiros">
+                    <p class="produto">
+                        <img src="./assets/imgs/hospedagem.png" alt="Logo de hospedagem">
+                        Hospedagem
                     </p>
-                </div>
-            </div>   
+                   
+               </div>
+               <div id="lastimgs">
+                    <p class="produto">
+                        <img src="./assets/imgs/internacional.png" alt="Logo de viagens nacionais">
+                        Viagens nacionais
+                    </p>
+                    <p class="produto">
+                        <img src="./assets/imgs/nacional.png" alt="Logo de viagens internacionais">
+                        Viagens internacionais
+                    </p>
+               </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
