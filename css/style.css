@@ -49,7 +49,7 @@ header div.caixa_de_pesquisa {
 }
 header div.caixa_de_pesquisa input {
   border-radius: 10px;
-  font-size: 2vw;
+  font-size: 2.5vw;
   width: 50vw;
   padding: 5px;
 }
@@ -70,7 +70,7 @@ main section#buscando_aeroporto div#escolher_pacote p {
   text-align: justify;
 }
 main section#buscando_aeroporto div#escolher_pacote p input {
-  width: 30vw;
+  width: 40vw;
   border-radius: 5px;
   padding: 3px;
 }
