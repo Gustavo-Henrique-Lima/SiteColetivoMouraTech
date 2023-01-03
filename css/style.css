@@ -6,7 +6,7 @@
 header {
   display: flex;
   flex-direction: column;
-  background-color: rgba(21, 21, 172, 0.884);
+  background-color: rgba(22, 22, 194, 0.867);
 }
 header div#div_principal {
   display: flex;
@@ -18,7 +18,7 @@ header div#div_principal div.planeta_e_cadastro {
   flex-direction: row;
 }
 header div#div_principal div.planeta_e_cadastro span#planeta {
-  font-size: 15vw;
+  font-size: 13vw;
   padding: 8px 0px 8px 8px;
 }
 header div#div_principal div.planeta_e_cadastro p#logo_header {
@@ -28,7 +28,7 @@ header div#div_principal div.planeta_e_cadastro p#logo_header {
 }
 header div#div_principal div.planeta_e_cadastro span#login_person {
   padding: 16px 0px;
-  font-size: 12vw;
+  font-size: 10vw;
 }
 header div#div_principal div.planeta_e_cadastro p#cadastro_header {
   padding: 40px 0px;
@@ -49,7 +49,57 @@ header div.caixa_de_pesquisa {
 }
 header div.caixa_de_pesquisa input {
   border-radius: 10px;
-  font-size: 3vw;
+  font-size: 2vw;
   width: 50vw;
   padding: 5px;
+}
+
+main section#buscando_aeroporto {
+  display: flex;
+  flex-direction: column;
+}
+main section#buscando_aeroporto h2 {
+  text-align: center;
+}
+main section#buscando_aeroporto div#escolher_pacote {
+  margin: auto;
+  padding: 20px 0px;
+}
+main section#buscando_aeroporto div#escolher_pacote p {
+  padding: 10px 10px;
+  text-align: justify;
+}
+main section#buscando_aeroporto div#escolher_pacote p input {
+  width: 30vw;
+  border-radius: 5px;
+  padding: 3px;
+}
+main section#buscando_aeroporto div#escolher_pacote input#saida_do_aeroporto {
+  margin-left: 20px;
+}
+main section#buscando_aeroporto div#tempo_de_viagem {
+  margin: auto;
+}
+main section#buscando_aeroporto div#tempo_de_viagem h3 {
+  text-align: center;
+}
+main section#buscando_aeroporto div#tempo_de_viagem div#inicio_e_fim {
+  display: flex;
+}
+main section#buscando_aeroporto div#tempo_de_viagem div#inicio_e_fim p {
+  padding: 15px;
+}
+main section#buscando_aeroporto div#tempo_de_viagem div#inicio_e_fim p input {
+  border-radius: 5px;
+}
+main section#buscando_aeroporto div#tempo_de_viagem div#passageiros {
+  text-align: center;
+}
+main section#buscando_aeroporto div#tempo_de_viagem div#passageiros input {
+  width: 5vw;
+  border-radius: 5px;
+}
+
+input {
+  background-color: rgb(204, 204, 204);
 }/*# sourceMappingURL=style.css.map */
