@@ -452,4 +452,53 @@ header div input {
     margin-bottom: 20px;
     border-radius: 15px;
   }
+  footer {
+    margin-top: 20px;
+    background-color: #487DD2;
+  }
+  footer h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer #endereco {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer #informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  footer #informacoes a {
+    color: #000000;
+  }
+  footer #informacoes div {
+    padding-left: 20px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer #ios_android {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -80px;
+  }
+  footer #ios_android #ios {
+    padding-top: 12px;
+  }
+  footer #contatos {
+    margin-top: -50px;
+  }
+  footer .linha {
+    width: 100%;
+    border: 1px solid black;
+  }
+  footer #pagamento {
+    padding: 10px;
+  }
+  footer #seguir {
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

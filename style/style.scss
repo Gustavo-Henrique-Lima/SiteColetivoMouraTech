@@ -547,5 +547,55 @@ header
             }
         }
     }
+    footer {
+        margin-top: 20px;
+        background-color: #487DD2;
+        h3 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #endereco {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        #informacoes {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            a {
+                color: #000000;
+            }
+            
+            div {
+                padding-left: 20px;
+            }
+        }
+        p {
+            text-align: center;
+        }
+        #ios_android {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -80px;
+            #ios {
+                padding-top: 12px;
+            }
+        }
+        #contatos {
+            margin-top: -50px;
+        }
+        .linha {
+            width: 100%;
+            border: 1px solid black;
+        }
+        #pagamento {
+            padding: 10px;
+        }
+        #seguir {
+            padding: 10px;
+        }
+    }
 }
 
