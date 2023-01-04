@@ -9,6 +9,9 @@
 .titulos{
     display: none;
 }
+.titulos1{
+    display: none;
+}
 header 
 {
     background-color: #487DD2;
@@ -215,6 +218,7 @@ header
     {
         margin-top: 90px;
     }
+
     #conteinerAnuncio
     {
         display: block;
@@ -222,6 +226,10 @@ header
     .anuncio
     {
         display: flex;
+        .left
+        {
+            margin-left: 100px;
+        }
     }
     pre
     {
@@ -250,6 +258,10 @@ header
                 font-size: 16px;
                 margin-left: 30px;
             }
+            .mid
+            {
+                text-align: justify;
+            }
             img
             {
                 width: 100%;
@@ -263,19 +275,46 @@ header
                 border: 2px solid #487DD2;
                 border-radius: 12px;
             }
-            .destaque
-            {
-                text-align: center;
-                font-weight: bold;
-            }
+        }
+    }
+    .destaque
+        {
+            text-align: justify;
+            font-weight: bold;
+        }
+    .btn
+    {
+        display: flex;
+        height: 30px;
+        input#nacional 
+        {
+            background-color: #BACEEE;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            color: #000000;
+            padding: 2px;
+        }
+        input#internacional 
+        {
+            padding: 2px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            color: grey;
+            border: 1px solid #487DD2;
         }
     }
 }
 
 @media only screen and (max-width: 1205px) 
 {
+    
     .titulos{
         margin-top: 200px;
+        display: block;
+        margin-left: 140px;
+    }
+    .titulos1{
+        margin-top: 20px;
         display: block;
         margin-left: 140px;
     }
@@ -412,83 +451,23 @@ header
                 }
             }
         }
-    }
-    #passagens_aereas 
-    {
-        display: flex;
-        flex-direction: column;
-        h1 
+        input#nacional 
         {
-            text-align: center;
-            padding-top: 10px;
+            background-color: #BACEEE;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            color: #000000;
+            padding: 2px;
         }
-        h4 
+        input#internacional 
         {
-            text-align: center;
+            padding: 2px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
             color: grey;
-            strong 
-            {
-                color: black;
-            }
-            }
-            p 
-            {
-                display: flex;
-                justify-content: center;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                input#nacional 
-                {
-                    background-color: #BACEEE;
-                    border-top-left-radius: 15px;
-                    border-bottom-left-radius: 15px;
-                    color: #000000;
-                    padding: 2px;
-                }
-                input#internacional 
-                {
-                    padding: 2px;
-                    border-top-right-radius: 15px;
-                    border-bottom-right-radius: 15px;
-                    color: grey;
-                    border: 1px solid #487DD2;
-                }
-            }
-            div 
-            {
-                display: flex;
-                border: 2px solid black;
-                width: 50vw;
-                height: 12vh;
-                border-radius: 23px;
-                margin: auto;
-                margin-bottom: 10px;
-                img 
-                {
-                    width: 30vw;
-                    border-top-left-radius: 18px;
-                    border-bottom-left-radius: 18px;
-
-                }
-                p 
-                {
-                    flex-direction: column;
-                    padding: 8px;
-                    font-size: 3vw;
-                }
-            }
-            #destinos 
-            {
-                margin: auto;
-                background-color: white;
-                color: #487DD2;
-                border-radius: 15px;
-                border: 1px solid #487DD2;
-                width: 40vw;
-                padding: 6px;
-            }
-
+            border: 1px solid #487DD2;
         }
+    }
         #hospedagem 
         {
             display: flex;

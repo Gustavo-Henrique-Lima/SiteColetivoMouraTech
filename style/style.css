@@ -9,6 +9,10 @@
   display: none;
 }
 
+.titulos1 {
+  display: none;
+}
+
 header {
   background-color: #487DD2;
 }
@@ -187,6 +191,9 @@ header div input {
 #promocao .anuncio {
   display: flex;
 }
+#promocao .anuncio .left {
+  margin-left: 100px;
+}
 #promocao pre {
   text-align: center;
   font-size: 18px;
@@ -212,6 +219,9 @@ header div input {
   font-size: 16px;
   margin-left: 30px;
 }
+#promocao .promocoes .oferta .mid {
+  text-align: justify;
+}
 #promocao .promocoes .oferta img {
   width: 100%;
   border-radius: 12px;
@@ -223,14 +233,37 @@ header div input {
   border: 2px solid #487DD2;
   border-radius: 12px;
 }
-#promocao .promocoes .oferta .destaque {
-  text-align: center;
+#promocao .destaque {
+  text-align: justify;
   font-weight: bold;
+}
+#promocao .btn {
+  display: flex;
+  height: 30px;
+}
+#promocao .btn input#nacional {
+  background-color: #BACEEE;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  color: #000000;
+  padding: 2px;
+}
+#promocao .btn input#internacional {
+  padding: 2px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: grey;
+  border: 1px solid #487DD2;
 }
 
 @media only screen and (max-width: 1205px) {
   .titulos {
     margin-top: 200px;
+    display: block;
+    margin-left: 140px;
+  }
+  .titulos1 {
+    margin-top: 20px;
     display: block;
     margin-left: 140px;
   }
@@ -339,68 +372,19 @@ header div input {
   main #promocao div .promocoes p strong {
     color: black;
   }
-  main #passagens_aereas {
-    display: flex;
-    flex-direction: column;
-  }
-  main #passagens_aereas h1 {
-    text-align: center;
-    padding-top: 10px;
-  }
-  main #passagens_aereas h4 {
-    text-align: center;
-    color: grey;
-  }
-  main #passagens_aereas h4 strong {
-    color: black;
-  }
-  main #passagens_aereas p {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  main #passagens_aereas p input#nacional {
+  main #promocao input#nacional {
     background-color: #BACEEE;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     color: #000000;
     padding: 2px;
   }
-  main #passagens_aereas p input#internacional {
+  main #promocao input#internacional {
     padding: 2px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: grey;
     border: 1px solid #487DD2;
-  }
-  main #passagens_aereas div {
-    display: flex;
-    border: 2px solid black;
-    width: 50vw;
-    height: 12vh;
-    border-radius: 23px;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  main #passagens_aereas div img {
-    width: 30vw;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
-  }
-  main #passagens_aereas div p {
-    flex-direction: column;
-    padding: 8px;
-    font-size: 3vw;
-  }
-  main #passagens_aereas #destinos {
-    margin: auto;
-    background-color: white;
-    color: #487DD2;
-    border-radius: 15px;
-    border: 1px solid #487DD2;
-    width: 40vw;
-    padding: 6px;
   }
   main #hospedagem {
     display: flex;
