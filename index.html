@@ -21,18 +21,17 @@
 <body>
     <header>
         <div id="nav-bar">
-            <a><img src="./assets/imgs/logo.png" alt="Logo Sky-Trip"></a>
-            <form action="index.html">
-                <input type="text" class="search-text" placeholder="Para onde você deseja ir?">
-            </form>
+            <a ><img src="./assets/imgs/logo.png" alt="Logo Sky-Trip" class="globo"></a>
             <div id="opt">
-                <img id="fav" src="./assets/imgs/favoritos.png" alt="Ir para favoritos">
-                <img id="login" src="./assets/imgs/user.png" alt="Ir pra login">
+                <img class="login" id="fav" src="./assets/imgs/favoritos.png" alt="Ir para favoritos">
+                <img class="login" id="login" src="./assets/imgs/user.png" alt="Ir pra login">
                 <p>
-                    <a href="">Entre ou <br>cadastre-se</a>
+                    <ahref="">Entre ou <br>cadastre-se</ahref=>
                 </p>
             </div>
         </div>
+        <div><input type="text" class="search-text" placeholder="Para onde você deseja ir?"></div>
+        
     </header>
     <main>
         <section class="container">
@@ -76,27 +75,37 @@
         <section id="buscando_aeroporto">
             <div id="escolher_pacote">
                 <h2>Escolha seu pacote</h2>
-                <p>Saindo de:  <input type="text" class="search-airport" id="saida_do_aeroporto" placeholder="Busque por aeroporto"></p>
-                <p>Destino para:  <input type="text" class="search-airport" placeholder="Busque por aeroporto"></p>
+                <p>Saindo de:  <input type="text"  id="saida_do_aeroporto" placeholder="Busque por aeroporto" class="azul-claro"></p>
+                <p>Destino para:  <input type="text"  placeholder="Busque por aeroporto" class="azul-claro"></p>
             </div>
             <div id="tempo_de_viagem">
                 <h3>Escolha o tempo de viagem:</h3>
                 <div id="inicio_e_fim">
                     <p>
                         Inicio: <br>
-                        <input type="date" name="Inicio" id="data_de_inicio">
+                        <input type="date" name="Inicio" id="data_de_inicio" class="azul-claro">
                     </p>
                     <p>
                         Fim: <br>
-                        <input type="date" name="Fim" id="data_de_fim">
+                        <input type="date" name="Fim" id="data_de_fim" class="azul-claro">
                     </p>
                 </div>
                 <div id="passageiros">
                     <p>
-                        Passageiros: <input type="number" name="" id="num_de_passageiros">
+                        Passageiros: <input type="number" name="" id="num_de_passageiros" class="azul-claro">
                     </p>
                 </div>
+                <div id="buscar">
+                    <input type="button" value="BUSCAR" id="botao_buscar">
+                </div>
             </div>   
+        </section>
+        <section id="promocao">
+            <h1>Aproveite as promoções!</h1>
+            <div>
+                <div class="promocoes"><img src="assets/imgs/destinos-para-viajar-com-a-crianca 1.png" alt=""><input type="button" value="promoção"><h4>MACEIÓ</h4><p>3 diárias a partir de <br><strong> R$ 200</strong></p></div>
+                <div class="promocoes"><img src="assets/imgs/Topo-Porto-Seguro-família 1.png" alt=""><input type="button" value="promoção"><h4>RECIFE</h4><p>3 diárias a partir de <br><strong>R$ 300</strong></p></div>
+            </div>
         </section>
     </main>
     <script src="./scripts/script.js"></script>

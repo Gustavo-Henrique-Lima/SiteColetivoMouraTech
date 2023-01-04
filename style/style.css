@@ -2,57 +2,68 @@
   margin: 0;
 }
 
-#nav-bar {
+header {
   background-color: #487DD2;
+}
+header #nav-bar {
+  display: flex;
   height: 20vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  -o-object-fit: contain;
-     object-fit: contain;
+  justify-content: space-between;
   color: black;
 }
-#nav-bar img {
-  margin-top: 1rem;
-  width: 30vh;
+header #nav-bar img.globo {
+  margin-top: 5rem;
+  width: 30vw;
 }
-#nav-bar input {
+header #opt {
+  height: 20vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+header #opt #fav {
+  width: 90px;
+  height: 102.86px;
+}
+header #opt #login {
+  width: 100px;
+}
+header #opt img {
+  margin-top: 2rem;
+}
+header #opt p {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+header #opt a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+}
+header div {
+  text-align: center;
+  padding-bottom: 20px;
+}
+header div input {
   box-sizing: border-box;
-  width: 614px;
-  height: 47px;
-  margin-left: 10rem;
+  width: 50vw;
+  height: 5vh;
   background: #BACEEE;
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
 
-#opt {
-  height: 20vh;
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-#opt #fav {
-  width: 90px;
-  height: 102.86px;
-}
-#opt #login {
-  width: 100px;
-}
-#opt a {
-  margin-right: 2rem;
-  text-decoration: none;
-  color: black;
-}
-
 .container {
   display: flex;
   background: #BACEEE;
   height: 63vh;
-  width: 100vw;
+  width: 100%;
 }
 .container .carrossel {
   align-items: center;
@@ -118,6 +129,9 @@
 #buscando_aeroporto h2 {
   text-align: center;
 }
+#buscando_aeroporto .azul-claro {
+  background-color: #BACEEE;
+}
 #buscando_aeroporto #escolher_pacote {
   margin: auto;
   padding: 20px 0px;
@@ -155,4 +169,86 @@
 #buscando_aeroporto #tempo_de_viagem div#passageiros input {
   width: 5vw;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 1205px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header div#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+  }
+  header div#nav-bar div#opt {
+    width: 10vw;
+  }
+  header div {
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  header div input {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 5vh;
+    background: #BACEEE;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  main .container {
+    display: none;
+  }
+  main #buscando_aeroporto div#buscar {
+    padding-top: 20px;
+    text-align: center;
+  }
+  main #buscando_aeroporto div#buscar input {
+    width: 13vw;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    background-color: #487DD2;
+    color: white;
+    padding: 5px;
+  }
+  main #promocao h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  main #promocao div {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+  }
+  main #promocao div .promocoes {
+    border: 2px solid black;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+  main #promocao div .promocoes img {
+    padding-bottom: 10px;
+  }
+  main #promocao div .promocoes input {
+    background-color: rgba(242, 5, 5, 0.3254901961);
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    box-shadow: 0.5px 0.5px #000000;
+  }
+  main #promocao div .promocoes h4 {
+    text-align: center;
+    padding: 10px;
+  }
+  main #promocao div .promocoes p {
+    text-align: center;
+    padding: 3px;
+    color: grey;
+  }
+  main #promocao div .promocoes p strong {
+    color: black;
+  }
 }/*# sourceMappingURL=style.css.map */
