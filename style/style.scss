@@ -8,7 +8,8 @@
 
 header {
     background-color: #487DD2;
-    #nav-bar {
+    #nav-bar 
+    {
     display: flex;
     height: 15vh;
     width: 100%;
@@ -17,7 +18,8 @@ header {
     justify-content: space-between;
     color: black;
 
-    img.globo{
+    img.globo
+    {
         margin-top: 5rem;
         width: 30vw;
     }
@@ -61,8 +63,8 @@ div {
     input
     {
         box-sizing: border-box;
-        width: 50vw;
-        height: 5vh;
+        width: 614px;
+        height: 47px;
         background: #BACEEE;
         border: 2px solid #000000;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -141,69 +143,60 @@ div {
 }
 #buscando_aeroporto 
 {       
-        background-color: red;
-        height: 63vh;
-        width: 100vw;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-top: 1rem;
+        box-sizing: border-box;
+        height: 200px;
+        border: 2px solid #000000;
+        border-radius: 12px;
+        background-color: #487DD2;;
+        width: 95%;
         h2 
         {
-            text-align: center;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            text-align: left;
         }
-        display: flex;
-        flex-direction: column;
-        .azul-claro {
+        .azul-claro 
+        {
             background-color: #BACEEE;
         }
         #escolher_pacote 
         {
+            display: flex;
+            justify-content: space-evenly;
             margin: auto;
-            padding: 20px 0px;
             p 
             {
-                padding: 10px 10px;
+                font-size: 20px;
+                margin-top: 10px;
                 text-align: justify;
                 input 
                 {
-                    width: 40vw;
-                    border-radius: 5px;
-                    padding: 3px;
+                    background: #BACEEE;
+                    width: 174px;
+                    height: 30px;
+                    border: 2px solid #000000;
+                    border-radius: 7px;
                 }
             }
-              input#saida_do_aeroporto 
-              {
-                margin-left: 20px;
-              }
         }
-        #tempo_de_viagem 
-          {
-            margin: auto;
-            h3 
+          #buscar
             {
-                text-align: center;
-            }
-            #inicio_e_fim 
-            {
-                display: flex;
-                p 
-                {
-                    padding: 15px;
-                    input 
-                    {
-                        border-radius: 5px;
-                    }
+                input{
+                    margin-top: 2rem;
+                    margin-left: 83.5%;
+                    font-size: 18px;
+                    color:white;
+                    width: 164px;
+                    height: 41px;
+                    background: #487DD2;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 12px;
                 }
             }
-            div#passageiros 
-            {
-                input 
-                {
-                    width: 5vw;
-                    border-radius: 5px;
-                }
-                text-align: center;
-            }
-            
-          }
-      }
+}
 
 
 
@@ -211,7 +204,8 @@ div {
 
 
 
-@media only screen and (max-width: 1205px) {
+@media only screen and (max-width: 1205px) 
+{
     header{
         display: flex;
         flex-direction: column;
@@ -240,91 +234,55 @@ div {
             }
         }
     }
-    main {
+    main 
+    {
         .container {
             display: none;
         }
         #buscando_aeroporto 
         {
-        background-color: white;
-        height: 63vh;
-        width: 100vw;
-        h2 
-        {
-            text-align: center;
-        }
-        display: flex;
-        flex-direction: column;
-        .azul-claro {
-            background-color: #BACEEE;
-        }
-        #escolher_pacote 
-        {
-            margin: auto;
-            padding: 20px 0px;
-            p 
+            border: none;
+            border-radius: none;
+            background-color: white;
+            h2 
             {
-                padding: 10px 10px;
-                text-align: justify;
-                input 
-                {
-                    width: 40vw;
-                    border-radius: 5px;
-                    padding: 3px;
-                }
+                display: block;
             }
-              input#saida_do_aeroporto 
-              {
-                margin-left: 20px;
-              }
-        }
-        #tempo_de_viagem 
-          {
-            div#buscar {
-                padding-top: 20px;
-                text-align: center;
-                input {
-                    width: 13vw;
-                    font-size: 2vw;
-                    font-family: Arial, Helvetica, sans-serif;
-                    border-radius: 20px;
-                    background-color: #487DD2;
-                    color: white;
-                    padding: 5px;
-                }
-            }
-            margin: auto;
-            h3 
+            #fake
             {
-                text-align: center;
+                display: block;
             }
-            #inicio_e_fim 
+            .azul-claro {
+                background-color: #BACEEE;
+            }
+            #escolher_pacote 
             {
-                display: flex;
+                display: block;
+                margin: auto;
+                height: 100px;
                 p 
                 {
-                    padding: 15px;
+                    text-align: justify;
                     input 
                     {
+                        width: 40vw;
                         border-radius: 5px;
+                        padding: 3px;
                     }
                 }
-            }
-            div#passageiros 
+        }
+        #buscar
+        {
+            input
             {
-                input 
-                {
-                    width: 5vw;
-                    border-radius: 5px;
-                }
-                text-align: center;
+                margin-top:200px;
+                margin-left: 30%;
             }
-            
-          }
-          
+        }
       }
 
         #promocao {
+            margin-top: 150px;
             h1 {
                 text-align: center;
                 padding-bottom: 20px;
@@ -364,7 +322,6 @@ div {
                     }
                 }
             }
-<<<<<<< HEAD
         }
         #passagens_aereas {
             display: flex;
@@ -500,6 +457,4 @@ div {
         }
     }
 }
-=======
-        }
->>>>>>> c3a0cc4057d63f4561c9448437445792a041d82e
+

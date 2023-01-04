@@ -53,8 +53,8 @@ header div {
 }
 header div input {
   box-sizing: border-box;
-  width: 50vw;
-  height: 5vh;
+  width: 614px;
+  height: 47px;
   background: #BACEEE;
   border: 2px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -79,7 +79,7 @@ header div input {
   margin-top: 1rem;
   margin-left: 2rem;
   overflow: hidden;
-  height: 320px;
+  height: 280px;
   width: 593px;
 }
 .container .carrossel .destinos .local {
@@ -90,7 +90,7 @@ header div input {
 .container .carrossel .destinos .local img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 320px;
+  height: 280px;
   width: 593px;
 }
 .container .imgs {
@@ -122,55 +122,51 @@ header div input {
 }
 
 #buscando_aeroporto {
-  background-color: red;
-  height: 63vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  height: 200px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  background-color: #487DD2;
+  width: 95%;
 }
 #buscando_aeroporto h2 {
-  text-align: center;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 #buscando_aeroporto .azul-claro {
   background-color: #BACEEE;
 }
 #buscando_aeroporto #escolher_pacote {
+  display: flex;
+  justify-content: space-evenly;
   margin: auto;
-  padding: 20px 0px;
 }
 #buscando_aeroporto #escolher_pacote p {
-  padding: 10px 10px;
+  font-size: 20px;
+  margin-top: 10px;
   text-align: justify;
 }
 #buscando_aeroporto #escolher_pacote p input {
-  width: 40vw;
-  border-radius: 5px;
-  padding: 3px;
+  background: #BACEEE;
+  width: 174px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 7px;
 }
-#buscando_aeroporto #escolher_pacote input#saida_do_aeroporto {
-  margin-left: 20px;
-}
-#buscando_aeroporto #tempo_de_viagem {
-  margin: auto;
-}
-#buscando_aeroporto #tempo_de_viagem h3 {
-  text-align: center;
-}
-#buscando_aeroporto #tempo_de_viagem #inicio_e_fim {
-  display: flex;
-}
-#buscando_aeroporto #tempo_de_viagem #inicio_e_fim p {
-  padding: 15px;
-}
-#buscando_aeroporto #tempo_de_viagem #inicio_e_fim p input {
-  border-radius: 5px;
-}
-#buscando_aeroporto #tempo_de_viagem div#passageiros {
-  text-align: center;
-}
-#buscando_aeroporto #tempo_de_viagem div#passageiros input {
-  width: 5vw;
-  border-radius: 5px;
+#buscando_aeroporto #buscar input {
+  margin-top: 2rem;
+  margin-left: 83.5%;
+  font-size: 18px;
+  color: white;
+  width: 164px;
+  height: 41px;
+  background: #487DD2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 
 @media only screen and (max-width: 1205px) {
@@ -204,24 +200,25 @@ header div input {
     display: none;
   }
   main #buscando_aeroporto {
+    border: none;
+    border-radius: none;
     background-color: white;
-    height: 63vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
   }
   main #buscando_aeroporto h2 {
-    text-align: center;
+    display: block;
+  }
+  main #buscando_aeroporto #fake {
+    display: block;
   }
   main #buscando_aeroporto .azul-claro {
     background-color: #BACEEE;
   }
   main #buscando_aeroporto #escolher_pacote {
+    display: block;
     margin: auto;
-    padding: 20px 0px;
+    height: 100px;
   }
   main #buscando_aeroporto #escolher_pacote p {
-    padding: 10px 10px;
     text-align: justify;
   }
   main #buscando_aeroporto #escolher_pacote p input {
@@ -229,43 +226,12 @@ header div input {
     border-radius: 5px;
     padding: 3px;
   }
-  main #buscando_aeroporto #escolher_pacote input#saida_do_aeroporto {
-    margin-left: 20px;
+  main #buscando_aeroporto #buscar input {
+    margin-top: 200px;
+    margin-left: 30%;
   }
-  main #buscando_aeroporto #tempo_de_viagem {
-    margin: auto;
-  }
-  main #buscando_aeroporto #tempo_de_viagem div#buscar {
-    padding-top: 20px;
-    text-align: center;
-  }
-  main #buscando_aeroporto #tempo_de_viagem div#buscar input {
-    width: 13vw;
-    font-size: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 20px;
-    background-color: #487DD2;
-    color: white;
-    padding: 5px;
-  }
-  main #buscando_aeroporto #tempo_de_viagem h3 {
-    text-align: center;
-  }
-  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim {
-    display: flex;
-  }
-  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim p {
-    padding: 15px;
-  }
-  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim p input {
-    border-radius: 5px;
-  }
-  main #buscando_aeroporto #tempo_de_viagem div#passageiros {
-    text-align: center;
-  }
-  main #buscando_aeroporto #tempo_de_viagem div#passageiros input {
-    width: 5vw;
-    border-radius: 5px;
+  main #promocao {
+    margin-top: 150px;
   }
   main #promocao h1 {
     text-align: center;
