@@ -6,6 +6,9 @@
     text-decoration: none;
 }
 
+.titulos{
+    display: none;
+}
 header 
 {
     background-color: #487DD2;
@@ -204,8 +207,78 @@ header
     }
 }
 
+#promocao
+{
+    display: flex;
+    margin-top: 2rem;
+    h3
+    {
+        margin-top: 90px;
+    }
+    #conteinerAnuncio
+    {
+        display: block;
+    }
+    .anuncio
+    {
+        display: flex;
+    }
+    pre
+    {
+        text-align: center;
+        font-size: 18px;
+    }
+    .promocoes
+    {
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-around;
+        .oferta
+        {
+            margin-left: 10px;
+            font-size: 18px;
+            display: block;
+            width: 200px;
+            height: 250px;
+            box-sizing: border-box;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            p
+            {
+                display: block;
+                justify-content: center;
+                font-size: 16px;
+                margin-left: 30px;
+            }
+            img
+            {
+                width: 100%;
+                border-radius: 12px;
+            }
+            input
+            {
+                font-size: 16px;
+                margin-left: 45px;
+                background: rgb(236, 97, 97);
+                border: 2px solid #487DD2;
+                border-radius: 12px;
+            }
+            .destaque
+            {
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1205px) 
 {
+    .titulos{
+        margin-top: 200px;
+        display: block;
+        margin-left: 140px;
+    }
     header
     {
         display: flex;
@@ -287,12 +360,16 @@ header
     }
     #promocao 
     {
-        margin-top: 150px;
+        margin-top: 20px;
         h1 
         {
             text-align: center;
             padding-bottom: 20px;
             padding-top: 30px;
+        }
+        .conteinerAnuncio
+        {
+            display: none;
         }
         div 
         {
@@ -301,6 +378,7 @@ header
             margin: auto;
             .promocoes 
             {
+                margin-left:0px;
                 border: 2px solid black;
                 border-radius: 17px;
                 display: flex;

@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+.titulos {
+  display: none;
+}
+
 header {
   background-color: #487DD2;
 }
@@ -170,7 +174,66 @@ header div input {
   border-radius: 12px;
 }
 
+#promocao {
+  display: flex;
+  margin-top: 2rem;
+}
+#promocao h3 {
+  margin-top: 90px;
+}
+#promocao #conteinerAnuncio {
+  display: block;
+}
+#promocao .anuncio {
+  display: flex;
+}
+#promocao pre {
+  text-align: center;
+  font-size: 18px;
+}
+#promocao .promocoes {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+#promocao .promocoes .oferta {
+  margin-left: 10px;
+  font-size: 18px;
+  display: block;
+  width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+#promocao .promocoes .oferta p {
+  display: block;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: 30px;
+}
+#promocao .promocoes .oferta img {
+  width: 100%;
+  border-radius: 12px;
+}
+#promocao .promocoes .oferta input {
+  font-size: 16px;
+  margin-left: 45px;
+  background: rgb(236, 97, 97);
+  border: 2px solid #487DD2;
+  border-radius: 12px;
+}
+#promocao .promocoes .oferta .destaque {
+  text-align: center;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 1205px) {
+  .titulos {
+    margin-top: 200px;
+    display: block;
+    margin-left: 140px;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -232,12 +295,15 @@ header div input {
     margin-left: 30%;
   }
   main #promocao {
-    margin-top: 150px;
+    margin-top: 20px;
   }
   main #promocao h1 {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
+  }
+  main #promocao .conteinerAnuncio {
+    display: none;
   }
   main #promocao div {
     display: flex;
@@ -245,6 +311,7 @@ header div input {
     margin: auto;
   }
   main #promocao div .promocoes {
+    margin-left: 0px;
     border: 2px solid black;
     border-radius: 17px;
     display: flex;
