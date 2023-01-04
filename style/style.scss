@@ -140,7 +140,8 @@ div {
     }  
 }
 #buscando_aeroporto 
-{
+{       
+        background-color: red;
         height: 63vh;
         width: 100vw;
         h2 
@@ -244,7 +245,8 @@ div {
             display: none;
         }
         #buscando_aeroporto 
-{
+        {
+        background-color: white;
         height: 63vh;
         width: 100vw;
         h2 
@@ -278,6 +280,19 @@ div {
         }
         #tempo_de_viagem 
           {
+            div#buscar {
+                padding-top: 20px;
+                text-align: center;
+                input {
+                    width: 13vw;
+                    font-size: 2vw;
+                    font-family: Arial, Helvetica, sans-serif;
+                    border-radius: 20px;
+                    background-color: #487DD2;
+                    color: white;
+                    padding: 5px;
+                }
+            }
             margin: auto;
             h3 
             {
@@ -306,32 +321,20 @@ div {
             }
             
           }
+          
       }
-        /*#buscando_aeroporto {
-            div#buscar {
-                padding-top: 20px;
-                text-align: center;
-                input {
-                    width: 13vw;
-                    font-size: 2vw;
-                    font-family: Arial, Helvetica, sans-serif;
-                    border-radius: 20px;
-                    background-color: #487DD2;
-                    color: white;
-                    padding: 5px;
-                }*/
-            }
-        }
 
         #promocao {
             h1 {
                 text-align: center;
                 padding-bottom: 20px;
+                padding-top: 30px;
             }
             div {
                 display: flex;
                 flex-direction: row;
                 margin: auto;
+
                 .promocoes {
                     border: 2px solid black;
                     border-radius: 17px;
@@ -362,6 +365,137 @@ div {
                 }
             }
         }
-    }
+        #passagens_aereas {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                text-align: center;
+                padding-top: 10px;
+            }
+            h4 {
+                strong {
+                    color: black;
+                }
+                text-align: center;
+                color: grey;
+            }
+            p {
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                input#nacional {
+                    background-color: #BACEEE;
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    color: #000000;
+                    padding: 2px;
+                }
+                input#internacional {
+                    padding: 2px;
+                    border-top-right-radius: 15px;
+                    border-bottom-right-radius: 15px;
+                    color: grey;
+                    border: 1px solid #487DD2;
+                }
+            }
+            div {
+                display: flex;
+                border: 2px solid black;
+                width: 50vw;
+                height: 12vh;
+                border-radius: 23px;
+                margin: auto;
+                margin-bottom: 10px;
+                img {
+                    width: 30vw;
+                    border-top-left-radius: 18px;
+                    border-bottom-left-radius: 18px;
 
+                }
+                p {
+                    flex-direction: column;
+                    padding: 8px;
+                    font-size: 3vw;
+                }
+            }
+            #destinos {
+                margin: auto;
+                background-color: white;
+                color: #487DD2;
+                border-radius: 15px;
+                border: 1px solid #487DD2;
+                width: 40vw;
+                padding: 6px;
+            }
+
+        }
+        #hospedagem {
+            display: flex;
+            flex-direction: column;
+            h1 {
+                text-align: center;
+                padding: 20px 0;
+            }
+            #hoteis {
+                background-color: white;
+                color: #487DD2;
+                border-radius: 15px;
+                border: 1px solid #487DD2;
+                width: 40vw;
+                padding: 6px;
+                margin: auto;
+            }
+            div {
+                display: flex;
+                border: 2px solid black;
+                width: 50vw;
+                border-radius: 23px;
+                margin: auto;
+                margin-bottom: 10px;
+                img {
+                    width: 30vw;
+                    border-top-left-radius: 18px;
+                    border-bottom-left-radius: 18px;
+                }
+                p {
+                    flex-direction: column;
+                    padding-left: 8px;
+                    font-size: 3vw;
+                }
+            }
+        }
+        #news_letter {
+            padding-top: 25px;
+            div {
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                border: 1px solid black;
+                border-radius: 15px;
+                p {
+                    text-align: center;
+                    padding-top: 10px;
+                }
+                input.cadastro {
+                    background-color: #BACEEE;
+                    margin-bottom: 10px;
+                    border-radius: 15px;
+                    width: 40vw;
+                }
+                
+                p#assinatura {
+                    display: flex;
+                    justify-content: end;
+                    input#assine {
+                        background-color: #BACEEE;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -122,6 +122,7 @@ header div input {
 }
 
 #buscando_aeroporto {
+  background-color: red;
   height: 63vh;
   width: 100vw;
   display: flex;
@@ -202,11 +203,43 @@ header div input {
   main .container {
     display: none;
   }
-  main #buscando_aeroporto div#buscar {
+  main #buscando_aeroporto {
+    background-color: white;
+    height: 63vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  main #buscando_aeroporto h2 {
+    text-align: center;
+  }
+  main #buscando_aeroporto .azul-claro {
+    background-color: #BACEEE;
+  }
+  main #buscando_aeroporto #escolher_pacote {
+    margin: auto;
+    padding: 20px 0px;
+  }
+  main #buscando_aeroporto #escolher_pacote p {
+    padding: 10px 10px;
+    text-align: justify;
+  }
+  main #buscando_aeroporto #escolher_pacote p input {
+    width: 40vw;
+    border-radius: 5px;
+    padding: 3px;
+  }
+  main #buscando_aeroporto #escolher_pacote input#saida_do_aeroporto {
+    margin-left: 20px;
+  }
+  main #buscando_aeroporto #tempo_de_viagem {
+    margin: auto;
+  }
+  main #buscando_aeroporto #tempo_de_viagem div#buscar {
     padding-top: 20px;
     text-align: center;
   }
-  main #buscando_aeroporto div#buscar input {
+  main #buscando_aeroporto #tempo_de_viagem div#buscar input {
     width: 13vw;
     font-size: 2vw;
     font-family: Arial, Helvetica, sans-serif;
@@ -215,9 +248,29 @@ header div input {
     color: white;
     padding: 5px;
   }
+  main #buscando_aeroporto #tempo_de_viagem h3 {
+    text-align: center;
+  }
+  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim {
+    display: flex;
+  }
+  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim p {
+    padding: 15px;
+  }
+  main #buscando_aeroporto #tempo_de_viagem #inicio_e_fim p input {
+    border-radius: 5px;
+  }
+  main #buscando_aeroporto #tempo_de_viagem div#passageiros {
+    text-align: center;
+  }
+  main #buscando_aeroporto #tempo_de_viagem div#passageiros input {
+    width: 5vw;
+    border-radius: 5px;
+  }
   main #promocao h1 {
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 30px;
   }
   main #promocao div {
     display: flex;
@@ -251,5 +304,134 @@ header div input {
   }
   main #promocao div .promocoes p strong {
     color: black;
+  }
+  main #passagens_aereas {
+    display: flex;
+    flex-direction: column;
+  }
+  main #passagens_aereas h1 {
+    text-align: center;
+    padding-top: 10px;
+  }
+  main #passagens_aereas h4 {
+    text-align: center;
+    color: grey;
+  }
+  main #passagens_aereas h4 strong {
+    color: black;
+  }
+  main #passagens_aereas p {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  main #passagens_aereas p input#nacional {
+    background-color: #BACEEE;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #000000;
+    padding: 2px;
+  }
+  main #passagens_aereas p input#internacional {
+    padding: 2px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: grey;
+    border: 1px solid #487DD2;
+  }
+  main #passagens_aereas div {
+    display: flex;
+    border: 2px solid black;
+    width: 50vw;
+    height: 12vh;
+    border-radius: 23px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  main #passagens_aereas div img {
+    width: 30vw;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  main #passagens_aereas div p {
+    flex-direction: column;
+    padding: 8px;
+    font-size: 3vw;
+  }
+  main #passagens_aereas #destinos {
+    margin: auto;
+    background-color: white;
+    color: #487DD2;
+    border-radius: 15px;
+    border: 1px solid #487DD2;
+    width: 40vw;
+    padding: 6px;
+  }
+  main #hospedagem {
+    display: flex;
+    flex-direction: column;
+  }
+  main #hospedagem h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  main #hospedagem #hoteis {
+    background-color: white;
+    color: #487DD2;
+    border-radius: 15px;
+    border: 1px solid #487DD2;
+    width: 40vw;
+    padding: 6px;
+    margin: auto;
+  }
+  main #hospedagem div {
+    display: flex;
+    border: 2px solid black;
+    width: 50vw;
+    border-radius: 23px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  main #hospedagem div img {
+    width: 30vw;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  main #hospedagem div p {
+    flex-direction: column;
+    padding-left: 8px;
+    font-size: 3vw;
+  }
+  main #news_letter {
+    padding-top: 25px;
+  }
+  main #news_letter div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  main #news_letter div p {
+    text-align: center;
+    padding-top: 10px;
+  }
+  main #news_letter div input.cadastro {
+    background-color: #BACEEE;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 40vw;
+  }
+  main #news_letter div p#assinatura {
+    display: flex;
+    justify-content: end;
+  }
+  main #news_letter div p#assinatura input#assine {
+    background-color: #BACEEE;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
