@@ -90,7 +90,7 @@ div {
             margin-top: 1rem;
             margin-left: 2rem;
             overflow: hidden;
-            height: 320px;
+            height: 280px;
             width: 593px;
             .local
             {
@@ -100,7 +100,7 @@ div {
                 img
                 {
                     object-fit: cover;
-                    height:320px;
+                    height:280px;
                     width: 593px;
                 }
             }
@@ -364,6 +364,7 @@ div {
                     }
                 }
             }
+<<<<<<< HEAD
         }
         #passagens_aereas {
             display: flex;
@@ -499,3 +500,6 @@ div {
         }
     }
 }
+=======
+        }
+>>>>>>> c3a0cc4057d63f4561c9448437445792a041d82e
