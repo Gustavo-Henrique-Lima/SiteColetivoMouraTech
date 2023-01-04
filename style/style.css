@@ -62,7 +62,6 @@ header div input {
 .container {
   display: flex;
   background: #BACEEE;
-  height: 63vh;
   width: 100%;
 }
 .container .carrossel {
