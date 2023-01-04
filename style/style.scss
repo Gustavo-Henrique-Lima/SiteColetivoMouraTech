@@ -243,8 +243,71 @@ div {
         .container {
             display: none;
         }
-       
-        #buscando_aeroporto {
+        #buscando_aeroporto 
+{
+        height: 63vh;
+        width: 100vw;
+        h2 
+        {
+            text-align: center;
+        }
+        display: flex;
+        flex-direction: column;
+        .azul-claro {
+            background-color: #BACEEE;
+        }
+        #escolher_pacote 
+        {
+            margin: auto;
+            padding: 20px 0px;
+            p 
+            {
+                padding: 10px 10px;
+                text-align: justify;
+                input 
+                {
+                    width: 40vw;
+                    border-radius: 5px;
+                    padding: 3px;
+                }
+            }
+              input#saida_do_aeroporto 
+              {
+                margin-left: 20px;
+              }
+        }
+        #tempo_de_viagem 
+          {
+            margin: auto;
+            h3 
+            {
+                text-align: center;
+            }
+            #inicio_e_fim 
+            {
+                display: flex;
+                p 
+                {
+                    padding: 15px;
+                    input 
+                    {
+                        border-radius: 5px;
+                    }
+                }
+            }
+            div#passageiros 
+            {
+                input 
+                {
+                    width: 5vw;
+                    border-radius: 5px;
+                }
+                text-align: center;
+            }
+            
+          }
+      }
+        /*#buscando_aeroporto {
             div#buscar {
                 padding-top: 20px;
                 text-align: center;
@@ -256,7 +319,7 @@ div {
                     background-color: #487DD2;
                     color: white;
                     padding: 5px;
-                }
+                }*/
             }
         }
 
