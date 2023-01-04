@@ -178,32 +178,32 @@ header div input {
   border-radius: 12px;
 }
 
-#promocao {
+.promocao {
   display: flex;
   margin-top: 2rem;
 }
-#promocao h3 {
+.promocao h3 {
   margin-top: 90px;
 }
-#promocao #conteinerAnuncio {
+.promocao #conteinerAnuncio {
   display: block;
 }
-#promocao .anuncio {
+.promocao .anuncio {
   display: flex;
 }
-#promocao .anuncio .left {
+.promocao .anuncio .left {
   margin-left: 100px;
 }
-#promocao pre {
+.promocao pre {
   text-align: center;
   font-size: 18px;
 }
-#promocao .promocoes {
+.promocao .promocoes {
   margin-left: 50px;
   display: flex;
   justify-content: space-around;
 }
-#promocao .promocoes .oferta {
+.promocao .promocoes .oferta {
   margin-left: 10px;
   font-size: 18px;
   display: block;
@@ -213,42 +213,42 @@ header div input {
   border: 2px solid #000000;
   border-radius: 12px;
 }
-#promocao .promocoes .oferta p {
+.promocao .promocoes .oferta p {
   display: block;
   justify-content: center;
   font-size: 16px;
   margin-left: 30px;
 }
-#promocao .promocoes .oferta .mid {
+.promocao .promocoes .oferta .mid {
   text-align: justify;
 }
-#promocao .promocoes .oferta img {
+.promocao .promocoes .oferta img {
   width: 100%;
   border-radius: 12px;
 }
-#promocao .promocoes .oferta input {
+.promocao .promocoes .oferta input {
   font-size: 16px;
   margin-left: 45px;
   background: rgb(236, 97, 97);
   border: 2px solid #487DD2;
   border-radius: 12px;
 }
-#promocao .destaque {
+.promocao .destaque {
   text-align: justify;
   font-weight: bold;
 }
-#promocao .btn {
+.promocao .btn {
   display: flex;
   height: 30px;
 }
-#promocao .btn input#nacional {
+.promocao .btn input#nacional {
   background-color: #BACEEE;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   color: #000000;
   padding: 2px;
 }
-#promocao .btn input#internacional {
+.promocao .btn input#internacional {
   padding: 2px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -327,59 +327,59 @@ header div input {
     margin-top: 200px;
     margin-left: 30%;
   }
-  main #promocao {
+  main .promocao {
     margin-top: 20px;
   }
-  main #promocao h1 {
+  main .promocao h1 {
     text-align: center;
     padding-bottom: 20px;
     padding-top: 30px;
   }
-  main #promocao .conteinerAnuncio {
+  main .promocao .conteinerAnuncio {
     display: none;
   }
-  main #promocao div {
+  main .promocao div {
     display: flex;
     flex-direction: row;
     margin: auto;
   }
-  main #promocao div .promocoes {
+  main .promocao div .promocoes {
     margin-left: 0px;
     border: 2px solid black;
     border-radius: 17px;
     display: flex;
     flex-direction: column;
   }
-  main #promocao div .promocoes img {
+  main .promocao div .promocoes img {
     padding-bottom: 10px;
   }
-  main #promocao div .promocoes input {
+  main .promocao div .promocoes input {
     background-color: rgba(242, 5, 5, 0.3254901961);
     border-radius: 15px;
     width: 70%;
     margin: auto;
     box-shadow: 0.5px 0.5px #000000;
   }
-  main #promocao div .promocoes h4 {
+  main .promocao div .promocoes h4 {
     text-align: center;
     padding: 10px;
   }
-  main #promocao div .promocoes p {
+  main .promocao div .promocoes p {
     text-align: center;
     padding: 3px;
     color: grey;
   }
-  main #promocao div .promocoes p strong {
+  main .promocao div .promocoes p strong {
     color: black;
   }
-  main #promocao input#nacional {
+  main .promocao input#nacional {
     background-color: #BACEEE;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     color: #000000;
     padding: 2px;
   }
-  main #promocao input#internacional {
+  main .promocao input#internacional {
     padding: 2px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -421,10 +421,10 @@ header div input {
     padding-left: 8px;
     font-size: 3vw;
   }
-  main #news_letter {
+  main .news_letter {
     padding-top: 25px;
   }
-  main #news_letter div {
+  main .news_letter div {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -432,21 +432,21 @@ header div input {
     border: 1px solid black;
     border-radius: 15px;
   }
-  main #news_letter div p {
+  main .news_letter div p {
     text-align: center;
     padding-top: 10px;
   }
-  main #news_letter div input.cadastro {
+  main .news_letter div input.cadastro {
     background-color: #BACEEE;
     margin-bottom: 10px;
     border-radius: 15px;
     width: 40vw;
   }
-  main #news_letter div p#assinatura {
+  main .news_letter div p#assinatura {
     display: flex;
     justify-content: end;
   }
-  main #news_letter div p#assinatura input#assine {
+  main .news_letter div p#assinatura input#assine {
     background-color: #BACEEE;
     margin-right: 20px;
     margin-bottom: 20px;
