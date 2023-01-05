@@ -13,6 +13,12 @@
   display: none;
 }
 
+h5 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
 header {
   background-color: #487DD2;
 }
@@ -293,16 +299,19 @@ header div input {
 }
 .passagens_aereas #nacional {
   margin-top: 1rem;
-  background-color: #BACEEE;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  color: #000000;
+  box-sizing: border-box;
+  width: 100px;
+  height: 41px;
+  background: #BACEEE;
+  border: 2px solid #487DD2;
+  border-radius: 12px 0px 0px 12px;
 }
 .passagens_aereas #internacional {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color: grey;
-  border: 1px solid #487DD2;
+  font-style: italic;
+  width: 100px;
+  height: 41px;
+  border: 2px solid #487DD2;
+  border-radius: 0px 12px 12px 0px;
 }
 .passagens_aereas #conteinerAnuncio {
   display: block;
@@ -312,6 +321,37 @@ header div input {
 }
 .passagens_aereas .anuncio .left {
   margin-left: 100px;
+}
+
+.news_letter {
+  margin-top: 1rem;
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.news_letter .form {
+  font-size: 18px;
+  margin-top: 2%;
+  margin-left: 20%;
+  display: block;
+}
+.news_letter .form .info {
+  display: flex;
+  justify-content: space-around;
+}
+.news_letter .form .info input {
+  margin-top: 5%;
+  background: #BACEEE;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  width: 220px;
+  height: 30px;
+}
+.news_letter .form .info .btn {
+  width: 100px;
 }
 
 @media only screen and (max-width: 1205px) {
@@ -431,10 +471,11 @@ header div input {
   }
   main .passagens_aereas #nacional {
     margin-top: 1rem;
-    background-color: #BACEEE;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    color: #000000;
+    width: 100px;
+    height: 41px;
+    background: #BACEEE;
+    border: 2px solid #487DD2;
+    border-radius: 12px 0px 0px 12px;
   }
   main .passagens_aereas #internacional {
     border-top-right-radius: 15px;
@@ -468,8 +509,11 @@ header div input {
   main .passagens_aereas #todos {
     display: block;
     margin-top: 1rem;
-    background-color: #BACEEE;
-    border-radius: 12px;
+    background: #BACEEE;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
     margin-left: 30%;
   }
   main .promocao {
@@ -481,8 +525,11 @@ header div input {
     display: block;
     margin-top: 1rem;
     margin-left: 30%;
-    background-color: #BACEEE;
-    border-radius: 12px;
+    background: #BACEEE;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
   }
   main .promocao .destaque {
     text-align: center;
@@ -535,31 +582,36 @@ header div input {
     height: 30px;
   }
   main .news_letter {
+    display: block;
     padding-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 12px;
   }
-  main .news_letter div {
+  main .news_letter .form {
     margin: auto;
     display: flex;
     flex-direction: column;
     width: 50%;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: none;
+    border-radius: none;
   }
-  main .news_letter div p {
+  main .news_letter .form p {
     text-align: center;
     padding-top: 10px;
   }
-  main .news_letter div input.cadastro {
+  main .news_letter .form input.cadastro {
     background-color: #BACEEE;
     margin-bottom: 10px;
     border-radius: 15px;
     width: 40vw;
   }
-  main .news_letter div p#assinatura {
+  main .news_letter .form p#assinatura {
     display: flex;
     justify-content: end;
   }
-  main .news_letter div p#assinatura input#assine {
+  main .news_letter .form p#assinatura input#assine {
     background-color: #BACEEE;
     margin-right: 20px;
     margin-bottom: 20px;
