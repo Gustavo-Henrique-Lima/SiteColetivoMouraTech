@@ -5,38 +5,39 @@
   text-decoration: none;
 }
 
-h1 {
-  text-align: center;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #487DD2;
 }
-
-#logo {
-  width: 10%;
-  margin-left: 45%;
+body #cadastro {
+  margin-top: 20px;
 }
 
 #form {
-  width: 25%;
-  height: 50%;
-  margin-left: 40%;
+  width: 20%;
+  margin-top: -5vh;
   box-sizing: border-box;
   border: 1px solid #000000;
-  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 #form #campos {
-  margin-left: 5%;
-}
-#form #campos .destaque {
-  margin-top: 1rem;
-  text-align: justify;
-  font-weight: bold;
+  display: flex;
+  flex-direction: column;
 }
 #form #campos input {
-  width: 80%;
-  height: 30px;
+  width: 90%;
+  border-radius: 8px;
+  background-color: #BACEEE;
 }
-#form #campos .btn {
-  margin-top: 1rem;
-  width: 80px;
+#form #campos p {
+  text-align: center;
+}
+#form #campos p .btn {
+  width: 50%;
+  border-radius: 8px;
 }
 #form p {
   margin-top: 1rem;
@@ -44,21 +45,20 @@ h1 {
   font-size: 12px;
 }
 
-p {
-  text-align: center;
-  margin-top: 1rem;
-}
-
 .btnConta {
   width: 200px;
   height: 30px;
+  border-radius: 10px;
+  background-color: #BACEEE;
 }
 
 footer {
-  margin-top: 1rem;
-  font-size: 12px;
   display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   justify-content: space-evenly;
+  width: 100%;
 }
 footer a {
   color: black;
