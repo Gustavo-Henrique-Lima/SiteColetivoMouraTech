@@ -466,17 +466,21 @@ header div input {
     flex-direction: column;
     text-align: center;
   }
+  main .passagens_aereas p.btn {
+    display: flex;
+    justify-content: center;
+  }
   main .passagens_aereas .destaque {
     text-align: center;
     font-weight: bold;
   }
   main .passagens_aereas #nacional {
-    margin-top: 1rem;
     width: 100px;
     height: 41px;
     background: #BACEEE;
     border: 2px solid #487DD2;
     border-radius: 12px 0px 0px 12px;
+    margin-top: 0px;
   }
   main .passagens_aereas #internacional {
     margin-right: 17%;

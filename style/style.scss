@@ -559,6 +559,10 @@ header
             display:block;
             flex-direction: column;
             text-align: center;
+            p.btn {
+                display: flex;
+                justify-content: center;
+            }
             .destaque
             {
                 text-align: center;
@@ -566,12 +570,12 @@ header
             }
             #nacional 
             {
-                margin-top: 1rem;
                 width: 100px;
                 height: 41px;
                 background: #BACEEE;
                 border: 2px solid #487DD2;
                 border-radius: 12px 0px 0px 12px;
+                margin-top: 0px;
             }
             #internacional 
             {
