@@ -352,6 +352,7 @@ header div input {
 }
 .news_letter .form .info .btn {
   width: 100px;
+  margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 1205px) {
@@ -478,6 +479,7 @@ header div input {
     border-radius: 12px 0px 0px 12px;
   }
   main .passagens_aereas #internacional {
+    margin-right: 17%;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: grey;
