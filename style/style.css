@@ -421,6 +421,38 @@ header div input {
     padding-left: 8px;
     font-size: 3vw;
   }
+  main .passagens_aereas {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .passagens_aereas .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .passagens_aereas .conteinerAnuncio {
+    display: none;
+  }
+  main .passagens_aereas .promocoes {
+    font-size: 18px;
+  }
+  main .passagens_aereas .promocoes .oferta {
+    margin-left: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    height: 100px;
+    width: 90%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 12px;
+  }
+  main .passagens_aereas .promocoes .oferta img {
+    height: 100%;
+    width: 60%;
+  }
+  main .passagens_aereas .promocoes .oferta .texto {
+    width: 40%;
+  }
   main .news_letter {
     padding-top: 25px;
   }

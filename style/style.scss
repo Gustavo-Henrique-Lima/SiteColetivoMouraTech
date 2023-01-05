@@ -509,6 +509,46 @@ header
                 }
             }
         }
+        .passagens_aereas 
+        {
+            .destaque
+            {
+                text-align: center;
+                font-weight: bold;
+            }
+            display:block;
+            flex-direction: column;
+            text-align: center;
+            .conteinerAnuncio
+            {
+                display: none;
+            }
+            .promocoes
+            {
+                font-size: 18px;
+                .oferta
+                {
+                    
+                    margin-left: 1rem;
+                    display: flex;
+                    margin-top: 1rem;
+                    height: 100px;
+                    width: 90%;
+                    box-sizing: border-box;
+                    border: 2px solid #000000;
+                    border-radius: 12px;
+                    img
+                    {
+                        height: 100%;
+                        width: 60%;
+                    }
+                    .texto
+                    {
+                        width: 40%;
+                    }
+                }
+            }
+        }
         .news_letter 
         {
             padding-top: 25px;
@@ -599,4 +639,3 @@ header
         }
     }
 }
-
