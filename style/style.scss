@@ -379,20 +379,17 @@ header
 
 @media only screen and (max-width: 1205px) 
 {
-    *
-    {
-        margin: 0;
-    }
+
     .titulos
     {
         margin-top: 200px;
         display: block;
-        margin-left: 130px;
+        margin-left:30%;
     }
     .titulos1{
         margin-top: 20px;
         display: block;
-        margin-left: 130px;
+        margin-left:30%;
         
     }
     header
@@ -470,7 +467,7 @@ header
             input
             {
                 margin-top:200px;
-                margin-left: 30%;
+                margin-left: 25%;
             }
         }
     }
@@ -550,10 +547,10 @@ header
                 .oferta
                 {
                     display: flex;
-                    margin-left: 4rem;
+                    
                     margin-top: 1rem;
                     height: 100px;
-                    width: 70%;
+                    width: 80%;
                     box-sizing: border-box;
                     border: 2px solid #000000;
                     border-radius: 12px;
@@ -574,7 +571,7 @@ header
                 margin-top: 1rem;
                 background-color: #BACEEE;
                 border-radius: 12px;
-                margin-left:40%;
+                margin-left:30%;
             }
         }
         .promocao
@@ -586,7 +583,7 @@ header
             {
                 display: block;
                 margin-top: 1rem;
-                margin-left:40%;
+                margin-left:30%;
                 background-color: #BACEEE;
                 border-radius: 12px;
             }
