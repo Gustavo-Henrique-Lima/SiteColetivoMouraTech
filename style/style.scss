@@ -295,10 +295,84 @@ header
 
 .passagens_aereas
 {
-
+    display: flex;
+    margin-top: 2rem;
+    .promocoes
+    {
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-around;
+        .oferta
+        {
+            margin-left: 10px;
+            font-size: 18px;
+            display: block;
+            width: 200px;
+            height: 250px;
+            box-sizing: border-box;
+            border: 2px solid #000000;
+            border-radius: 12px;
+            p
+            {
+                display: block;
+                justify-content: center;
+                font-size: 16px;
+                margin-left: 30px;
+            }
+            .mid
+            {
+                text-align: justify;
+            }
+            img
+            {
+                width: 100%;
+                border-radius: 12px;
+            }
+            input
+            {
+                font-size: 16px;
+                margin-left: 45px;
+                background: rgb(236, 97, 97);
+                border: 2px solid #487DD2;
+                border-radius: 12px;
+            }
+        }
+    }
+    .destaque
+        {
+            text-align: justify;
+            font-weight: bold;
+        }
     #todos
     {
         display: none;
+    }
+    #nacional 
+    {
+        margin-top: 1rem;
+        background-color: #BACEEE;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        color: #000000;
+    }
+    #internacional 
+    {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        color: grey;
+        border: 1px solid #487DD2;
+    }
+    #conteinerAnuncio
+    {
+        display: block;
+    }
+    .anuncio
+    {
+        display: flex;
+        .left
+        {
+            margin-left: 100px;
+        }
     }
 }
 
@@ -465,13 +539,13 @@ header
                 color: grey;
                 border: 1px solid #487DD2;
             }
-           
             .conteinerAnuncio
             {
                 display: none;
             }
             .promocoes
             {
+                display: block;
                 font-size: 18px;
                 .oferta
                 {
