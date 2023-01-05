@@ -355,6 +355,53 @@ header div input {
   margin-bottom: 1rem;
 }
 
+footer {
+  font-size: 18px;
+  margin-top: 1rem;
+  background-color: #3965AB;
+  width: 100%;
+}
+footer #logoend {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+footer #logoend p {
+  margin-top: 2rem;
+}
+footer #informacoes {
+  display: flex;
+  justify-content: space-around;
+}
+footer #informacoes a {
+  color: #000000;
+}
+footer #baixe {
+  margin-top: 2rem;
+  text-align: center;
+}
+footer #ios_android {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer #ios_android img {
+  width: 80%;
+}
+footer #pagamento {
+  text-align: center;
+}
+footer #pagamento img {
+  display: none;
+}
+footer #seguir {
+  margin-top: 1rem;
+  text-align: center;
+}
+footer #imgs {
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1205px) {
   .titulos {
     margin-top: 200px;
@@ -367,6 +414,7 @@ header div input {
     margin-left: 30%;
   }
   header {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -625,6 +673,7 @@ header div input {
   }
   footer {
     margin-top: 20px;
+    width: 100%;
     background-color: #487DD2;
   }
   footer h3 {
@@ -659,11 +708,14 @@ header div input {
   footer #ios_android #ios {
     padding-top: 12px;
   }
+  footer #ios_android img {
+    width: 80%;
+  }
   footer #contatos {
     margin-top: -50px;
   }
   footer .linha {
-    width: 100%;
+    width: 99%;
     border: 1px solid black;
   }
   footer #pagamento {

@@ -419,6 +419,63 @@ header
         }
     }
 }
+footer
+{
+    font-size: 18px;
+    margin-top: 1rem;
+    background-color: #3965AB;
+    width: 100%;
+    #logoend{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        p
+        {
+            margin-top: 2rem;
+        }
+    }
+    #informacoes
+    {
+        display: flex;
+        justify-content: space-around;
+        a 
+        {
+            color: #000000;
+        }
+    }
+    #baixe
+    {
+        margin-top: 2rem;
+        text-align: center;
+    }
+    #ios_android
+    {
+        display: flex;
+        justify-content: space-evenly;
+        img
+        {
+            width: 80%;
+        }
+    }
+    #pagamento
+    {
+        text-align: center;
+        img
+        {
+            display: none;
+        }
+    }
+    #seguir
+    {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    #imgs
+    {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media only screen and (max-width: 1205px) 
 {
@@ -437,6 +494,7 @@ header
     }
     header
     {
+        width: 100%;
         display: flex;
         flex-direction: column;
         div#nav-bar 
@@ -750,6 +808,7 @@ header
     }
     footer {
         margin-top: 20px;
+        width: 100%;
         background-color: #487DD2;
         h3 {
             text-align: center;
@@ -783,12 +842,17 @@ header
             #ios {
                 padding-top: 12px;
             }
+            img
+            {
+                width: 80%;
+            }
+        
         }
         #contatos {
             margin-top: -50px;
         }
         .linha {
-            width: 100%;
+            width: 99%;
             border: 1px solid black;
         }
         #pagamento {
