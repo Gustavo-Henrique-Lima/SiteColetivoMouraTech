@@ -182,6 +182,9 @@ header div input {
   display: flex;
   margin-top: 2rem;
 }
+.promocao #todos {
+  display: none;
+}
 .promocao h3 {
   margin-top: 90px;
 }
@@ -241,31 +244,24 @@ header div input {
   display: flex;
   height: 30px;
 }
-.promocao .btn input#nacional {
-  background-color: #BACEEE;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-  color: #000000;
-  padding: 2px;
-}
-.promocao .btn input#internacional {
-  padding: 2px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  color: grey;
-  border: 1px solid #487DD2;
+
+.passagens_aereas #todos {
+  display: none;
 }
 
 @media only screen and (max-width: 1205px) {
+  * {
+    margin: 0;
+  }
   .titulos {
     margin-top: 200px;
     display: block;
-    margin-left: 140px;
+    margin-left: 130px;
   }
   .titulos1 {
     margin-top: 20px;
     display: block;
-    margin-left: 140px;
+    margin-left: 130px;
   }
   header {
     display: flex;
@@ -327,65 +323,6 @@ header div input {
     margin-top: 200px;
     margin-left: 30%;
   }
-  main .promocao {
-    margin-top: 20px;
-  }
-  main .promocao h1 {
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 30px;
-  }
-  main .promocao .conteinerAnuncio {
-    display: none;
-  }
-  main .promocao div {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-  }
-  main .promocao div .promocoes {
-    margin-left: 0px;
-    border: 2px solid black;
-    border-radius: 17px;
-    display: flex;
-    flex-direction: column;
-  }
-  main .promocao div .promocoes img {
-    padding-bottom: 10px;
-  }
-  main .promocao div .promocoes input {
-    background-color: rgba(242, 5, 5, 0.3254901961);
-    border-radius: 15px;
-    width: 70%;
-    margin: auto;
-    box-shadow: 0.5px 0.5px #000000;
-  }
-  main .promocao div .promocoes h4 {
-    text-align: center;
-    padding: 10px;
-  }
-  main .promocao div .promocoes p {
-    text-align: center;
-    padding: 3px;
-    color: grey;
-  }
-  main .promocao div .promocoes p strong {
-    color: black;
-  }
-  main .promocao input#nacional {
-    background-color: #BACEEE;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    color: #000000;
-    padding: 2px;
-  }
-  main .promocao input#internacional {
-    padding: 2px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    color: grey;
-    border: 1px solid #487DD2;
-  }
   main #hospedagem {
     display: flex;
     flex-direction: column;
@@ -430,6 +367,19 @@ header div input {
     text-align: center;
     font-weight: bold;
   }
+  main .passagens_aereas #nacional {
+    margin-top: 1rem;
+    background-color: #BACEEE;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #000000;
+  }
+  main .passagens_aereas #internacional {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: grey;
+    border: 1px solid #487DD2;
+  }
   main .passagens_aereas .conteinerAnuncio {
     display: none;
   }
@@ -437,21 +387,90 @@ header div input {
     font-size: 18px;
   }
   main .passagens_aereas .promocoes .oferta {
-    margin-left: 1rem;
     display: flex;
+    margin-left: 4rem;
     margin-top: 1rem;
     height: 100px;
-    width: 90%;
+    width: 70%;
     box-sizing: border-box;
     border: 2px solid #000000;
     border-radius: 12px;
   }
   main .passagens_aereas .promocoes .oferta img {
     height: 100%;
-    width: 60%;
+    width: 50%;
   }
   main .passagens_aereas .promocoes .oferta .texto {
     width: 40%;
+  }
+  main .passagens_aereas #todos {
+    display: block;
+    margin-top: 1rem;
+    background-color: #BACEEE;
+    border-radius: 12px;
+    margin-left: 40%;
+  }
+  main .promocao {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .promocao #todos {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 40%;
+    background-color: #BACEEE;
+    border-radius: 12px;
+  }
+  main .promocao .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .promocao .conteinerAnuncio {
+    display: none;
+  }
+  main .promocao .anuncio {
+    display: none;
+  }
+  main .promocao .promocoes {
+    display: block;
+  }
+  main .promocao .promocoes .oferta {
+    display: flex;
+    margin-top: 1rem;
+    height: 110px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 12px;
+  }
+  main .promocao .promocoes .oferta .promo {
+    display: none;
+  }
+  main .promocao .promocoes .oferta .mid {
+    text-align: center;
+  }
+  main .promocao .promocoes .oferta img {
+    height: 100%;
+    width: 50%;
+  }
+  main .promocao .promocoes .oferta .texto {
+    width: 40%;
+  }
+  main .promocao .promocoes .oferta input {
+    font-size: 16px;
+    margin-left: 45px;
+    background: rgb(236, 97, 97);
+    border: 2px solid #487DD2;
+    border-radius: 12px;
+  }
+  main .promocao .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .promocao .btn {
+    display: flex;
+    height: 30px;
   }
   main .news_letter {
     padding-top: 25px;

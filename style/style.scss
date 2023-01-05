@@ -214,6 +214,10 @@ header
 {
     display: flex;
     margin-top: 2rem;
+    #todos
+    {
+        display: none;
+    }
     h3
     {
         margin-top: 90px;
@@ -286,37 +290,35 @@ header
     {
         display: flex;
         height: 30px;
-        input#nacional 
-        {
-            background-color: #BACEEE;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            color: #000000;
-            padding: 2px;
-        }
-        input#internacional 
-        {
-            padding: 2px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            color: grey;
-            border: 1px solid #487DD2;
-        }
     }
 }
 
+.passagens_aereas
+{
+
+    #todos
+    {
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width: 1205px) 
 {
-    
-    .titulos{
+    *
+    {
+        margin: 0;
+    }
+    .titulos
+    {
         margin-top: 200px;
         display: block;
-        margin-left: 140px;
+        margin-left: 130px;
     }
     .titulos1{
         margin-top: 20px;
         display: block;
-        margin-left: 140px;
+        margin-left: 130px;
         
     }
     header
@@ -398,77 +400,6 @@ header
             }
         }
     }
-    .promocao 
-    {
-        margin-top: 20px;
-        h1 
-        {
-            text-align: center;
-            padding-bottom: 20px;
-            padding-top: 30px;
-        }
-        .conteinerAnuncio
-        {
-            display: none;
-        }
-        div 
-        {
-            display: flex;
-            flex-direction: row;
-            margin: auto;
-            .promocoes 
-            {
-                margin-left:0px;
-                border: 2px solid black;
-                border-radius: 17px;
-                display: flex;
-                flex-direction: column;
-                img 
-                {
-                    padding-bottom: 10px;
-                }
-                input 
-                {
-                    background-color: #f2050553;
-                    border-radius: 15px;
-                    width: 70%;
-                    margin: auto;
-                    box-shadow: 0.5px 0.5px#000000;
-                }
-                h4 
-                {
-                    text-align: center;
-                    padding: 10px;
-                }
-                p 
-                {
-                    text-align: center;
-                    padding: 3px;
-                    color: grey;
-                    strong 
-                    {
-                         color: black;
-                    }
-                }
-            }
-        }
-        input#nacional 
-        {
-            background-color: #BACEEE;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            color: #000000;
-            padding: 2px;
-        }
-        input#internacional 
-        {
-            padding: 2px;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
-            color: grey;
-            border: 1px solid #487DD2;
-        }
-    }
         #hospedagem 
         {
             display: flex;
@@ -511,14 +442,30 @@ header
         }
         .passagens_aereas 
         {
+            display:block;
+            flex-direction: column;
+            text-align: center;
             .destaque
             {
                 text-align: center;
                 font-weight: bold;
             }
-            display:block;
-            flex-direction: column;
-            text-align: center;
+            #nacional 
+            {
+                margin-top: 1rem;
+                background-color: #BACEEE;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                color: #000000;
+            }
+            #internacional 
+            {
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                color: grey;
+                border: 1px solid #487DD2;
+            }
+           
             .conteinerAnuncio
             {
                 display: none;
@@ -528,25 +475,108 @@ header
                 font-size: 18px;
                 .oferta
                 {
-                    
-                    margin-left: 1rem;
                     display: flex;
+                    margin-left: 4rem;
                     margin-top: 1rem;
                     height: 100px;
-                    width: 90%;
+                    width: 70%;
                     box-sizing: border-box;
                     border: 2px solid #000000;
                     border-radius: 12px;
                     img
                     {
                         height: 100%;
-                        width: 60%;
+                        width: 50%;
                     }
                     .texto
                     {
                         width: 40%;
                     }
                 }
+            }
+            #todos
+            {
+                display: block;
+                margin-top: 1rem;
+                background-color: #BACEEE;
+                border-radius: 12px;
+                margin-left:40%;
+            }
+        }
+        .promocao
+        {
+            display:block;
+            flex-direction: column;
+            text-align: center;
+            #todos
+            {
+                display: block;
+                margin-top: 1rem;
+                margin-left:40%;
+                background-color: #BACEEE;
+                border-radius: 12px;
+            }
+            .destaque
+            {
+                text-align: center;
+                font-weight: bold;
+            }
+            .conteinerAnuncio
+            {
+                display: none;
+            }
+            .anuncio
+            {
+                display: none;
+            }
+            .promocoes
+            {
+                display: block;
+                .oferta
+                {
+                    display: flex;
+                    margin-top: 1rem;
+                    height: 110px;
+                    width: 80%;
+                    box-sizing: border-box;
+                    border: 2px solid #000000;
+                    border-radius: 12px;
+                    .promo
+                    {
+                        display: none;
+                    }
+                    .mid
+                    {
+                        text-align: center;
+                    }
+                    img
+                    {
+                        height: 100%;
+                        width: 50%;
+                    }
+                    .texto
+                    {
+                        width: 40%;
+                    }
+                    input
+                    {
+                        font-size: 16px;
+                        margin-left: 45px;
+                        background: rgb(236, 97, 97);
+                        border: 2px solid #487DD2;
+                        border-radius: 12px;
+                    }
+                }
+            }
+            .destaque
+                {
+                    text-align: center;
+                    font-weight: bold;
+                }
+            .btn
+            {
+                display: flex;
+                height: 30px;
             }
         }
         .news_letter 
