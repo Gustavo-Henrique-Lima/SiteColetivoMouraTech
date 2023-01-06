@@ -229,7 +229,7 @@ header div input {
   margin-left: 30px;
 }
 .promocao .promocoes .oferta .mid {
-  text-align: justify;
+  text-align: center;
 }
 .promocao .promocoes .oferta img {
   width: 100%;
@@ -277,7 +277,7 @@ header div input {
   margin-left: 30px;
 }
 .passagens_aereas .promocoes .oferta .mid {
-  text-align: justify;
+  text-align: center;
 }
 .passagens_aereas .promocoes .oferta img {
   width: 100%;
@@ -616,7 +616,7 @@ footer #imgs {
     width: 50%;
   }
   main .promocao .promocoes .oferta .texto {
-    width: 40%;
+    width: 60%;
   }
   main .promocao .promocoes .oferta input {
     font-size: 16px;
