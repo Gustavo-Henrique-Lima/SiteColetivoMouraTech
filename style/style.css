@@ -188,7 +188,7 @@ header div input {
   display: flex;
   margin-top: 2rem;
 }
-.promocao #todos {
+.promocao .todos {
   display: none;
 }
 .promocao h3 {
@@ -294,7 +294,7 @@ header div input {
   text-align: justify;
   font-weight: bold;
 }
-.passagens_aereas #todos {
+.passagens_aereas .todos {
   display: none;
 }
 .passagens_aereas #nacional {
@@ -421,7 +421,6 @@ footer #imgs {
   header div#nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     align-items: center;
   }
   header div#nav-bar div#opt {
@@ -445,7 +444,6 @@ footer #imgs {
   }
   main #buscando_aeroporto {
     border: none;
-    border-radius: none;
     background-color: white;
   }
   main #buscando_aeroporto h2 {
@@ -560,7 +558,7 @@ footer #imgs {
   main .passagens_aereas .promocoes .oferta .texto {
     width: 40%;
   }
-  main .passagens_aereas #todos {
+  main .passagens_aereas .todos {
     display: block;
     margin-top: 1rem;
     background: #BACEEE;
@@ -575,7 +573,7 @@ footer #imgs {
     flex-direction: column;
     text-align: center;
   }
-  main .promocao #todos {
+  main .promocao .todos {
     display: block;
     margin-top: 1rem;
     margin-left: 30%;
@@ -649,7 +647,6 @@ footer #imgs {
     flex-direction: column;
     width: 50%;
     border: none;
-    border-radius: none;
   }
   main .news_letter .form p {
     text-align: center;

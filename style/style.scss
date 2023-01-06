@@ -219,7 +219,7 @@ header
 {
     display: flex;
     margin-top: 2rem;
-    #todos
+    .todos
     {
         display: none;
     }
@@ -348,9 +348,10 @@ header
             text-align: justify;
             font-weight: bold;
         }
-    #todos
+    .todos
     {
         display: none;
+
     }
     #nacional 
     {
@@ -501,7 +502,6 @@ footer
         {
             display: flex;
             flex-direction: row;
-            justify-content: baseline;
             align-items: center;
             div#opt 
             {
@@ -533,7 +533,6 @@ footer
         #buscando_aeroporto 
         {
             border: none;
-            border-radius: none;
             background-color: white;
             h2 
             {
@@ -671,7 +670,7 @@ footer
                     }
                 }
             }
-            #todos
+            .todos
             {
                 display: block;
                 margin-top: 1rem;
@@ -688,7 +687,7 @@ footer
             display:block;
             flex-direction: column;
             text-align: center;
-            #todos
+            .todos
             {
                 display: block;
                 margin-top: 1rem;
@@ -777,7 +776,6 @@ footer
                 flex-direction: column;
                 width: 50%;
                 border: none;
-                border-radius: none;
                 p 
                 {
                     text-align: center;
