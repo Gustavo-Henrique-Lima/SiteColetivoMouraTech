@@ -478,8 +478,15 @@ footer
     }
 }
 
+main{
+    .slider_mobile{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 1205px) 
 {
+
 
     .titulos
     {
@@ -529,6 +536,41 @@ footer
         .container 
         {
             display: none;
+        }
+        .slider_mobile {
+            display: block;
+            margin: 0 auto;
+            width: 80vw;
+            height: 300px;
+            overflow: hidden;
+            .slides {
+                display: flex;
+                width: 300vw;
+                height: 300px;
+                input {
+                    display: none;
+                }
+        
+                img {
+                    width: 80vw;
+                }
+                
+            }
+            .manual-navigation{
+                position: absolute;
+                width: 80vw;
+                margin-top: -40px;
+                display: flex;
+                justify-content: center;
+
+                .manual-btn{
+                    border: 2px solid #FFF;
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 1s;
+                }
+            }
         }
         #buscando_aeroporto 
         {

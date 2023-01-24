@@ -18,7 +18,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-<body>
+<body onload="infinity();">
     <header>
         <div id="nav-bar">
             <a href="index.html"><img src="./assets/imgs/logo.png" alt="Logo Sky-Trip" class="globo"></a>
@@ -33,6 +33,15 @@
         <div><input type="text" class="search-text" placeholder="Para onde você deseja ir?"></div>
     </header>
     <main>
+        <section class="slider_mobile">
+            <div class="slides">
+                <!--Slide images-->
+                    <img src="./assets/imgs/destino1.png" alt="Belo Jardim" id="belojardim">  
+                    <img src="./assets/imgs/destino2.png" alt="Sanharó" id="sanharo">
+                    <img src="./assets/imgs/destino3.png" alt="Tacaimbó" id="tacaimbo">
+                <!--Fim Slide images-->
+            </div>
+        </section>
         <section class="container">
             <div class="carrossel">
                 <h1>Descubra novos destinos!</h1>
@@ -290,5 +299,6 @@
         </div>
     </footer>
     <script src="./scripts/script.js"></script>
+    <script src="scripts/sliderMobile.js"></script>
 </body>
 </html>
