@@ -479,7 +479,7 @@ footer
 }
 
 main{
-    .slider_mobile{
+    #carrosel_mobile{
         display: none;
     }
 }
@@ -536,6 +536,14 @@ main{
         .container 
         {
             display: none;
+        }
+        #carrosel_mobile {
+            display: block;
+            background-color: #BACEEE;
+            padding: 3vh 0 ;
+            h2{
+                text-align: center;
+            }
         }
         .slider_mobile {
             display: block;

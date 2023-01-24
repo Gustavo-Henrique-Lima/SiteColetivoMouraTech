@@ -402,7 +402,7 @@ footer #imgs {
   justify-content: center;
 }
 
-main .slider_mobile {
+main #carrosel_mobile {
   display: none;
 }
 
@@ -445,6 +445,14 @@ main .slider_mobile {
   }
   main .container {
     display: none;
+  }
+  main #carrosel_mobile {
+    display: block;
+    background-color: #BACEEE;
+    padding: 3vh 0;
+  }
+  main #carrosel_mobile h2 {
+    text-align: center;
   }
   main .slider_mobile {
     display: block;
