@@ -539,10 +539,12 @@ main{
         }
         .slider_mobile {
             display: block;
-            margin: 0 auto;
+            margin: 3vh auto;
             width: 80vw;
             height: 300px;
             overflow: hidden;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.477);
+
             .slides {
                 display: flex;
                 width: 300vw;
